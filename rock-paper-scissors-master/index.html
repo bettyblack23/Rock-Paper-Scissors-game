@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="game-function.js"></script>
+    <script src="rules.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <div class="wrapper">
+        <div class="score">
+          <div class="logo">
+            <img class="game-logo" src="images/logo.svg" alt="logo" />
+          </div>
+          <div class="board">
+            <div class="board-text">
+              <p class="score-text">score</p>
+              <p class="number-text" id="number_score">0</p>
+            </div>
+          </div>
+        </div>
+  
+  <div class="playground">
+    <div class="game">
+      <div class="top1">
+        <div class="main-paper paper hover" onclick="firstRoundPaper()">
+          <img
+            class="image"
+            src="images/icon-paper.svg"
+            alt="paper-img"
+          />
+        </div>
+        <div class="main-scissors scissors hover" onclick="firstRoundScissors()">
+          <img
+            class="image"
+            src="images/icon-scissors.svg"
+            alt="scissors-img"
+          />
+        </div>
+      </div>
+  
+      <div class="bottom">
+        <div class="main-rock rock hover" onclick="firstRoundRock()">
+          <img
+            class="image"
+            src="images/icon-rock.svg"
+            alt="rock-img"
+          />
+        </div>
+      </div>
+    </div>
+  
+    <div class="game2">
+      <div class="top2">
+        <div class="me">
+          <div class="me-paper paper">
+            <img
+              class="image"
+              src="images/icon-paper.svg"
+              alt="paper-img"
+            />
+          </div>
+          <div class="me-scissors scissors">
+            <img
+              class="image"
+              src="images/icon-scissors.svg"
+              alt="scissors-img"
+            />
+          </div>
+          <div class="me-rock rock">
+            <img
+              class="image"
+              src="images/icon-rock.svg"
+              alt="rock-img"
+            />
+          </div>
+          <div class="players">
+            <p>You picked</p>
+          </div>
+        </div>
+  
+        <div class="cpu">
+          <div class="cpu-circle">
+          </div>
+          <div class="cpu-paper paper">
+            <img
+              class="image"
+              src="images/icon-paper.svg"
+              alt="paper-img"
+            />
+          </div>
+          <div class="cpu-scissors scissors">
+            <img
+              class="image"
+              src="images/icon-scissors.svg"
+              alt="scissors-img"
+            />
+          </div>
+          <div class="cpu-rock rock">
+            <img
+              class="image"
+              src="images/icon-rock.svg"
+              alt="rock-img"
+            />
+          </div>
+          <div class="players">
+            <p>The house picked</p>
+          </div>
+        </div>
+        <div class="play-again-container">
+          <div class="result-txt" id="result_text"></div>
+          <button type ="button" class="play-button" onclick="playAgain()" > Play Again</button>
+        </div>
+      </div>
+  </div>
+  </div>
+  
+        <div class="rules-button" onclick="showRules()">
+          <p>Rules</p>
+        </div>
+  
+  
+      <div class="rules">
+        <h1>Rules</h1>
+        <img src="images/image-rules.svg" alt="rules-img" class="rules-img">
+        <img src="images/icon-close.svg" alt="exit-rules-icon" class="x-img" onclick="exitRules()">
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
